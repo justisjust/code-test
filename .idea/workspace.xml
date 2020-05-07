@@ -31,7 +31,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
+            <state relative-caret-position="1152">
               <caret line="36" column="11" lean-forward="true" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
             </state>
           </provider>
@@ -170,9 +170,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-26" />
-    <option name="y" value="253" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="592" />
+    <option name="y" value="175" />
     <option name="width" value="1920" />
     <option name="height" value="860" />
   </component>
@@ -376,12 +376,12 @@
       <workItem from="1587478034166" duration="13838000" />
       <workItem from="1588043904477" duration="10916000" />
       <workItem from="1588217144636" duration="6566000" />
-      <workItem from="1588761331886" duration="5670000" />
+      <workItem from="1588761331886" duration="6160000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153059000" />
+    <option name="totallyTimeSpent" value="153549000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
@@ -861,7 +861,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
+        <state relative-caret-position="1152">
           <caret line="36" column="11" lean-forward="true" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
         </state>
       </provider>

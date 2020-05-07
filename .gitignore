@@ -1,5 +1,6 @@
 ##ignore this file##
 /target/
+/.idea/
 
 .classpath
 .project
@@ -8,6 +9,7 @@
 *.mdb
 *.ldb
 *.sln
+*.iml
 ##class file##
 *.com
 *.class
