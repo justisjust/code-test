@@ -3,7 +3,9 @@ package com.hzb.thread;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -34,5 +36,18 @@ public class Test {
         JSONObject object = JSON.parseObject(s);
         System.out.println(JSON.toJSONString(process));
         System.out.println(process.getRspCode());
+        StringBuffer s1 = new StringBuffer("aa");
+
+        setString(s1);
+        System.out.println(s1);
+
+        List<Integer> list = Collections.singletonList(1);
+        list.add(2);
+        System.out.println(list.size());
+
+    }
+
+    private static void setString(StringBuffer s) {
+        s = new StringBuffer("demo");
     }
 }

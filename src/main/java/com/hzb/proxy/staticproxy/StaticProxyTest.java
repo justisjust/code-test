@@ -13,10 +13,10 @@ public class StaticProxyTest {
 
     public static void main(String[] args) {
 //        new Father(new Son()).find();
-        Father father = new Father(new Son());
+        Wuye wuye = new Wuye(new Zhangsan());
         try {
-            Method method = father.getClass().getMethod("find", null);
-            method.invoke(father);
+            Method method = wuye.getClass().getMethod("buy", null);
+            method.invoke(wuye);
 //            method.invoke(father, null);
         } catch (NoSuchMethodException e) {
             e.printStackTrace();

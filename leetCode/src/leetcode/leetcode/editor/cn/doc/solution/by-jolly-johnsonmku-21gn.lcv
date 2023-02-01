@@ -1,0 +1,44 @@
+### 解题思路
+
+还是动态规划的问题，但是要弄清楚哪个是行，哪个是列。
+什么时候用到行？
+什么时候用到列！
+
+### 代码
+
+* cpp
+
+```cpp
+class Solution {
+public:
+    int minPathSum(vector<vector<int>>& grid) 
+    {
+                //动态规划问题，先创建一个子问题数组
+        int dp[grid.size()][grid[0].size()];
+        
+        //对dp进行初始化
+        dp[0][0] = grid[0][0];
+        for (int j = 1; j <= grid[0].size() - 1; j++) //有grid.size() 列 对第一行进行初始化
+        {
+            
+            dp[0][j] = dp[0][j - 1] + grid[0][j];
+        }
+        for (int i = 1; i <= grid.size() - 1; i++) //对第一列进行初始化
+        {
+            dp[i][0] = dp[i - 1][0] + grid[i][0];
+        }
+        //推导关系
+        for (int i = 1; i <= grid.size() - 1; i++) //对行进行遍历
+        {
+            for (int j = 1; j <= grid[0].size() - 1; j++) //对列进行遍历
+            {
+                dp[i][j] = min(dp[i - 1][j], dp[i][j - 1]) + grid[i][j];
+            }
+        }
+            
+        return dp[grid.size() - 1][grid[0].size() - 1];
+
+    }
+};
+```
+

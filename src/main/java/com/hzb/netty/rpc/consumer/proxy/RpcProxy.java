@@ -59,7 +59,7 @@ public class RpcProxy {
             req.setParams(method.getParameterTypes());
             req.setValues(args);
 
-            final RpcProxyHandler proxyHandler = new RpcProxyHandler();
+            final RpcProxyHandler proxyHandler = new RpcProxyHandler(req);
             //发起网络请求
             NioEventLoopGroup workGroup = new NioEventLoopGroup();
 

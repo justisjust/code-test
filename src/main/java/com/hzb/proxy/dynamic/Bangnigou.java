@@ -1,7 +1,5 @@
 package com.hzb.proxy.dynamic;
 
-import com.hzb.proxy.Person;
-
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
@@ -12,7 +10,7 @@ import java.lang.reflect.Proxy;
  * @Date 2020-01-31 14:48
  * @Version 1.0
  */
-public class Meipo<T> implements InvocationHandler {
+public class Bangnigou<T> implements InvocationHandler {
 
     private T target;
 

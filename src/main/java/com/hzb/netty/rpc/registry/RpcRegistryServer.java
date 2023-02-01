@@ -8,10 +8,8 @@ import io.netty.channel.ChannelPipeline;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import io.netty.handler.codec.FixedLengthFrameDecoder;
 import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
 import io.netty.handler.codec.LengthFieldPrepender;
-import io.netty.handler.codec.serialization.ClassResolver;
 import io.netty.handler.codec.serialization.ClassResolvers;
 import io.netty.handler.codec.serialization.ObjectDecoder;
 import io.netty.handler.codec.serialization.ObjectEncoder;
@@ -22,12 +20,12 @@ import io.netty.handler.codec.serialization.ObjectEncoder;
  * @Date 2020-03-04 22:07
  * @Version 1.0
  */
-public class RpcRegistry {
+public class RpcRegistryServer {
 
 
     private int port;
 
-    public RpcRegistry(int port) {
+    public RpcRegistryServer(int port) {
         this.port = port;
     }
 
@@ -73,7 +71,7 @@ public class RpcRegistry {
     }
 
     public static void main(String[] args) {
-        new RpcRegistry(8080).start();
+        new RpcRegistryServer(8080).start();
         String s = "㛑";
         System.out.println(s);
     }

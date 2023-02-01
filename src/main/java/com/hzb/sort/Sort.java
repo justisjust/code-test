@@ -22,6 +22,10 @@ public class Sort {
 
         new Sort().insertionSort(array);
 
+        for (int i = 0; i < 3; ++i) {
+            System.out.println(i);
+        }
+
 
     }
 

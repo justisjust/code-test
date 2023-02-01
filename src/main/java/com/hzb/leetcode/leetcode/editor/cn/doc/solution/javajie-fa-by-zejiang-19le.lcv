@@ -1,0 +1,52 @@
+> Problem: [92. 反转链表 II](https://leetcode.cn/problems/reverse-linked-list-ii/description/)
+
+[TOC]
+
+# Code
+
+* []
+
+```Java
+
+class Solution {
+    public ListNode reverseBetween(ListNode head, int left, int right) {
+        // 根据left和right 去反转链表, 首先需要拿到left之前的一个节点, 以及 right之后的一个节点
+        // 断开链表, 反转区间内的链表, 最后再连接上prev节点以及 tail节点
+        ListNode dmy = new ListNode(0);
+        dmy.next = head;
+        ListNode prev = dmy;
+        // 因为我们要拿的是left之前的一个节点, 所以这里需要再减一
+        for (int i = 0; i < left - 1; i++) {
+            prev = prev.next;
+        }
+        // 同上需要找到right区间的位置
+        ListNode rightNode = prev;
+        // right范围内的下一个节点
+        for (int i = 0; i < right - left + 1; i++) {
+            rightNode = rightNode.next;
+        }
+        // 找到这两个节点之后, 我们需要断开链表
+        ListNode tail = rightNode.next;
+        ListNode revNode = prev.next;
+        rightNode.next = null;
+
+        reverse(revNode);
+        // 反转完之后需要重新连接上节点
+        prev.next = rightNode;
+        revNode.next = tail;
+        return dmy.next;
+    }
+
+    public void reverse(ListNode head) {
+        ListNode prev = null;
+        ListNode cur = head;
+        while (cur != null) {
+            ListNode next = cur.next;
+            cur.next = prev;
+            prev = cur;
+            cur = next;
+        }
+    }
+}
+```
+

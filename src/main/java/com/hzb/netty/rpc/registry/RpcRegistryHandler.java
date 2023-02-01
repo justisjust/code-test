@@ -92,6 +92,7 @@ public class RpcRegistryHandler extends ChannelInboundHandlerAdapter {
             ctx.write(result);
 
         } catch (Exception e) {
+            e.printStackTrace();
             ctx.write("test");
         }
         ctx.flush();

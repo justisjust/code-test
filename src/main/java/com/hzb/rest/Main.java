@@ -7,4 +7,14 @@ package com.hzb.rest;
  * @Version 1.0
  */
 public class Main {
+
+    public static void main(String[] args) {
+        int[] res = new int[5];
+        for (int i = 0; i < 5; i++) {
+            res[i] = i;
+        }
+        for (int i = 0; i < 5; i++) {
+            System.out.println(res[i]);
+        }
+    }
 }

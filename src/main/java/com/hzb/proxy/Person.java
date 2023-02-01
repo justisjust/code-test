@@ -8,5 +8,5 @@ package com.hzb.proxy;
  */
 public interface Person {
 
-    void find();
+    void buy();
 }

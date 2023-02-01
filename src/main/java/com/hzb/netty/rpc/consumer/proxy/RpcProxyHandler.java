@@ -17,12 +17,16 @@ public class RpcProxyHandler extends SimpleChannelInboundHandler {
 
     private Object response;
 
+    public RpcProxyHandler(InvokerProtocol response) {
+        this.response = response;
+    }
+
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         System.out.println(Thread.currentThread().getName() + "---" + "正在连接... ");
 
 
-        ctx.writeAndFlush(4).sync();
+        ctx.writeAndFlush(response).sync();
         super.channelActive(ctx);
     }
 

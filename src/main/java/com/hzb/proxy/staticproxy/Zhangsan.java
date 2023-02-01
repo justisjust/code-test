@@ -8,9 +8,9 @@ import com.hzb.proxy.Person;
  * @Date 2020-01-31 14:20
  * @Version 1.0
  */
-public class Son implements Person {
+public class Zhangsan implements Person {
     @Override
-    public void find() {
-        System.out.println("need job");
+    public void buy() {
+        System.out.println("我要买连花清瘟胶囊*10");
     }
 }
