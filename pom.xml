@@ -10,7 +10,7 @@
   <version>1.0-SNAPSHOT</version>
     <modules>
         <module>dubbo-test</module>
-        <module>resthttp</module>
+        <module>leetCode</module>
     </modules>
 
     <name>code-test</name>

@@ -11,9 +11,9 @@ public class Sort {
 
     public static void main(String[] args) {
         /*int[] array = {3,2,1};
-        new Sort().bubbleSort(array);
+        new Sort().bubbleSort(array);*/
         int[] array1 = {3,2,1};
-        new Sort().bubbleSort2(array1);*/
+        new Sort().bubbleSort2(array1);
 
         //选择排序
 //        最佳情况：T(n) = O(n2)  最差情况：T(n) = O(n2)  平均情况：T(n) = O(n2)
